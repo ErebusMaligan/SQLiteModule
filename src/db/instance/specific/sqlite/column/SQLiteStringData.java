@@ -20,7 +20,7 @@ public class SQLiteStringData extends StringData {
 	private static SimpleDateFormat format = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
 
 	/**
-	 * @param name
+	 * @param name column name
 	 */
 	public SQLiteStringData( String name ) {
 		super( name );

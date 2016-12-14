@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+dependencies {
+	compile fileTree( dir: "../libs/sqlite-jdbc", include: '*.jar' )
+	compile files( '../libs/DBCache.jar' )
+}
+
+ext {
+	copyLibs = true
+	libDest = "deployed/Tools/libs"
+}
+
+//The dependencies and ext block MUST come before this script call - otherwise the ext block in common won't know how to set some properties
+apply from: '../gradle/stdlib.gradle'
