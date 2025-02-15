@@ -1,8 +1,8 @@
 apply plugin: 'java'
 
 dependencies {
-	compile fileTree( dir: "../libs/sqlite-jdbc", include: '*.jar' )
-	compile files( '../libs/DBCache.jar' )
+	implementation fileTree( dir: "../libs/sqlite-jdbc", include: '*.jar' )
+	implementation files( '../libs/DBCache.jar' )
 }
 
 ext {
